@@ -1,0 +1,83 @@
+package Objeto;
+
+import javax.swing.JOptionPane;
+
+public class UsoCamioneta {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 
+		Camioneta csilverado = new Camioneta();
+		
+		csilverado.setColor("azul");
+		System.out.println(csilverado.getColor());
+		
+		csilverado.setRuedas(4);
+		System.out.println(csilverado.getRuedas());
+		
+		csilverado.setLargo(4);
+		System.out.println(csilverado.getLargo());
+		
+		csilverado.setAncho(2);
+		System.out.println(csilverado.getAncho());
+		
+		csilverado.setCapacidadC(500);
+		System.out.println(csilverado.getCapacidadCarga());
+		
+		csilverado.setPeso(1700);
+		System.out.println(csilverado.getPeso());
+		
+		csilverado.setAS("Automatica");
+		System.out.println(csilverado.getAS());
+		
+		csilverado.setAsiento("Tela");
+		System.out.println(csilverado.getAsiento());
+		
+		csilverado.setC_asientos(5);
+		System.out.println(csilverado.getC_asientos());
+		
+		csilverado.setClimatizador("Funcionando aire acondicionado");
+		System.out.println(csilverado.getClimatizador());
+		
+		csilverado.setTraccion("4x4");
+		System.out.println(csilverado.getTraccion());
+		 
+		
+		//Interactuar con pantalla 
+		//JOptionPane a = new JOptionPane();
+		
+		String ancho = JOptionPane.showInputDialog("Introduzca el valor del ancho:");
+		System.out.println(ancho);
+		
+		String largo = JOptionPane.showInputDialog("Introduzca el valor del largo:");
+		System.out.println(largo);
+		
+		String peso = JOptionPane.showInputDialog("Introduzca el valor del peso:");
+		System.out.println(peso);
+		
+		String capacidadC = JOptionPane.showInputDialog("Introduzca la capacidad carga:");
+		System.out.println(capacidadC);
+		
+		String ruedas = JOptionPane.showInputDialog("Introduzca la cantidad de carga:");
+		System.out.println(ruedas);
+		
+		String color = JOptionPane.showInputDialog("Introduzca el color:");
+		System.out.println(color);
+		
+		String transmision_AS = JOptionPane.showInputDialog("Introduzca el tipo de transmision:");
+		System.out.println(transmision_AS);
+		
+		String asiento = JOptionPane.showInputDialog("Introduzca el tipo de asiento:");
+		System.out.println(asiento);
+		
+		String climatizador = JOptionPane.showInputDialog("Diga si funciona el aire acondicionado:");
+		System.out.println(climatizador);
+		
+		String C_asientos1 = JOptionPane.showInputDialog("Introduzca la cantidad de asiento:");
+		System.out.println(C_asientos1);
+		
+		//Metodo de llamar a todas las caracteristicas
+		System.out.println(csilverado.getCharacteristic());		
+		
+	}
+}
