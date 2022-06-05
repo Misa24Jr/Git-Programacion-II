@@ -1,0 +1,145 @@
+package Objeto;
+
+public class Camioneta {
+	//Caracteristicas
+	
+	private int ancho ;
+	private int largo;
+	private int peso;
+	private int capacidadC;
+	private int ruedas;
+	private String color;
+	private String transmision_AS;
+	private String asiento, climatizador;
+	private int C_asientos1;
+	private String traccion;
+	
+	//public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	//}
+	
+	//Metodo Constructor para inicializar los objetos 
+	public String getCharacteristic() {
+		String s = new String();
+		s = this.getAncho() +'\n'+
+			this.getCapacidadCarga() +'\n'+
+			this.getAS() + '\n' +
+			this.getAsiento() + '\n' + 
+			this.getC_asientos() + '\n' + 
+			this.getClimatizador() + '\n' + 
+			this.getColor() + '\n' +
+			this.getLargo() + '\n' + 
+			this.getPeso() + '\n' +
+			this.getRuedas() + '\n' + 
+			this.getTraccion();
+			;
+		return s;
+	}
+	
+	public Camioneta(){
+		ruedas = 4;
+		ancho = 2;
+		largo = 4;
+		capacidadC = 500;
+		peso = 1700;
+		color = "Azul";
+		transmision_AS = "Automatica";
+		asiento = "Tela";
+		climatizador = "Funcionando aire acondicionado";
+		C_asientos1 = 5;
+	}
+	//Tipo de traccion
+	public String getTraccion(){
+		return "La traccion es de " + this.traccion;
+		}
+	public void setTraccion(String traccion){
+		this.traccion = traccion;
+	}
+	//Tipo de asientos
+	public String getAsiento() {
+		return "El tipo de asiento es de " + asiento;
+	}
+
+	public void setAsiento(String asiento) {
+		this.asiento = asiento;
+	}
+
+	//Ver si tiene Aire acondicionado
+	public String getClimatizador() {
+		return climatizador;
+	}
+
+	public void setClimatizador(String climatizador) {
+		this.climatizador = climatizador;
+	}
+
+	//Cantidad de asientos 
+	public String getC_asientos() {
+		return "La candidad de asientos es de " + C_asientos1;
+	}
+
+	public void setC_asientos(int c_asientos) {
+		C_asientos1 = c_asientos;
+	}
+	
+	//Traccion_AS
+	public String getAS() { //Getter
+		return "La transmision es " + this.transmision_AS;
+	}
+	public void setAS(String transmision_AS) {
+		this.transmision_AS = transmision_AS;
+	}
+	
+	//Largo
+	public String getLargo(){ //Getter
+		return  "El largo de la camioneta es de " + this.largo + " metros";
+	}
+	public void setLargo(int largo){ //Setter
+		this.largo = largo;
+	}
+	
+	
+	//Color
+	public String getColor(){ //Getter 
+		return "El color de la camioneta es " + color;
+	}
+	public void setColor(String color){ //Setter
+		this.color = color;
+	}
+	
+	
+	//Ruedas
+	public String getRuedas(){ //Getter
+		return "La cantidad de ruedas de la camioneta es " + ruedas;
+	}
+	public void setRuedas(int ruedas){ //Setter
+		this.ruedas = ruedas;
+	}
+	
+	
+	//Ancho
+	public String getAncho(){ //Getter
+		return "El ancho de la camioneta es de " + ancho + " metros";
+	} 
+	public void setAncho(int ancho){ //Setter
+		this.ancho = ancho;
+	}
+	
+	
+	//Capacida de Carga
+	public String getCapacidadCarga(){ //Getter
+		return "La capacidad de carga es de " + capacidadC + " kilos"; 
+	}
+	public void setCapacidadC(int capacidadC){ //Setter
+		this.capacidadC = capacidadC;
+	}
+	
+	
+	//Peso
+	public String getPeso(){ //Getter
+		return "El peso de camioneta es de " + peso + " kilos";
+	}
+	public void setPeso(int peso){ //Setter
+		this.peso = peso;
+	}
+}
