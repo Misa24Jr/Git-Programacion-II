@@ -10,7 +10,7 @@ public class conexion {
 	public static Connection conectarse() {
 		try {
 			
-			Connection miConexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/app", "postgres", "joseandres10");
+			Connection miConexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/app", "postgres", "mjrb2003");
 			
 			return miConexion;
 			
